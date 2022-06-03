@@ -284,8 +284,8 @@ class EncoderDecoder(BaseSegmentor):
         else:
             ft = x
             seg_ft = None
-        return seg_pred, seg_logit
-        #return seg_pred, ft, seg_ft
+        #return seg_pred, seg_logit
+        return seg_pred, ft, seg_ft
 
     def aug_test(self, imgs, img_metas, rescale=True):
         """Test with augmentations.
