@@ -27,6 +27,7 @@ python make_gt_image.py
 ```
 
 **進行訓練**
+將[此行](https://github.com/ananzeng/STAS-Detection-Competition-on-Pathological-Section-Images-of-Lung-Adenocarcinoma-II-Using-Image-Seg/blob/main/mmseg/models/segmentors/encoder_decoder.py#L287 "此行")註解  將[此行](https://github.com/ananzeng/STAS-Detection-Competition-on-Pathological-Section-Images-of-Lung-Adenocarcinoma-II-Using-Image-Seg/blob/main/mmseg/models/segmentors/encoder_decoder.py#L288 "此行")取消註解
 產生的權重檔案會在./work_dirs/semfpn_semask_swin_large_patch4_window12_640x640_80k_ade20k
 ```
 python tools/train.py configs/semfpn_semask_swin_large_patch4_window12_640x640_80k_ade20k.py --seed 69 --deterministic
